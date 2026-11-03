@@ -8,8 +8,14 @@ mainTitleEl.textContent = 'Welcome to the Cozy Cafe';
 
 
 // Part 2:
-const highlightTitleEls = document.querySelector('.highlight-title');
+const highlightTitleEls = document.querySelectorAll('.highlight-title');
 highlightTitleEls.forEach(element => {
     console.log(element.textContent); 
-    element.style.fontstyle = 'Italic';
+    element.style.fontStyle = 'italic';
 });
+
+const paragraphEl = document.querySelector('#quote-of-the-day');
+paragraphEl.textContent = 'A little coffee, a little conversation.';
+
+
+paragraphEl.classList.add("featured")
