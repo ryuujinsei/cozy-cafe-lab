@@ -16,6 +16,13 @@ highlightTitleEls.forEach(element => {
 
 const paragraphEl = document.querySelector('#quote-of-the-day');
 paragraphEl.textContent = 'A little coffee, a little conversation.';
+paragraphEl.classList.add("featured");
 
 
-paragraphEl.classList.add("featured")
+// Part 3:
+
+const imageEl = document.querySelector('#main-photo');
+console.log(imageEl.getAttribute('src'));
+imageEl.setAttribute("src", "./assets/berry-cake.jpg");
+imageEl.setAttribute("alt","A berry cake served at the cafe");
+
